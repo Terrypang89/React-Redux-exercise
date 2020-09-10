@@ -1,3 +1,5 @@
+// is the entry component for our app. 
+//It renders the header, the AddTodo, TodoList, and VisibilityFilters components.
 import React from "react";
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";

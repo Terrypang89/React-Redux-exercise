@@ -7,6 +7,7 @@ import store from "./redux/store";
 import TodoApp from "./TodoApp";
 
 const rootElement = document.getElementById("root");
+//<TodoApp /> is now wrapped with the <Provider /> with store passed in as a prop.
 ReactDOM.render(
   <Provider store={store}>
     <TodoApp />
