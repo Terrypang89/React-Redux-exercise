@@ -4,6 +4,7 @@ const initialState = {
   allIds: [],
   byIds: {}
 };
+// to set to store
 
 //-> Appends the id to its allIds field and sets the todo within 
 //  its byIds field upon receiving the ADD_TODO action
@@ -11,7 +12,7 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case ADD_TODO: {
-        console.log(action);
+        //console.log(action);
       const { id, content } = action.payload;
       return {
         ...state,
@@ -26,7 +27,7 @@ export default function(state = initialState, action) {
       };
     }
     case TOGGLE_TODO: {
-        console.log(action);
+        //console.log(action);
       const { id } = action.payload;
       return {
         ...state,

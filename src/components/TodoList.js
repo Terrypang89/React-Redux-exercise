@@ -38,7 +38,7 @@ const TodoList = ({ todos }) => (
 // indicating which todos and in what order they should be rendered.
 const mapStateToProps = state => {
   const { visibilityFilter } = state;
-  console.log(state);
+  //console.log(state);
   const todos = getTodosByVisibilityFilter(state, visibilityFilter); // do filtering
   return { todos };
   //   const allTodos = getTodos(state);

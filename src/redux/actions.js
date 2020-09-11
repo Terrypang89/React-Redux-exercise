@@ -17,11 +17,14 @@ export const addTodo = content => ({
 //toggleTodo creates the action to toggle todos. It takes a single number variable id 
 //and returns a TOGGLE_TODO action with payload containing id only
 export const toggleTodo = id => ({
-  type: TOGGLE_TODO,
+  type: TOGGLE_TODO, 
   payload: { id }
 });
 
 //setFilter creates the action to set the app’s active filter. 
 //It takes a single string variable filter and returns a SET_FILTER action with 
 //payload containing the filter itself
-export const setFilter = filter => ({ type: SET_FILTER, payload: { filter } });
+export const setFilter = filter => ({ 
+    type: SET_FILTER, 
+    payload: { filter } 
+});

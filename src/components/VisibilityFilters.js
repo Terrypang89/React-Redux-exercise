@@ -37,7 +37,7 @@ const VisibilityFilters = ({ activeFilter, setFilter }) => {
 };
 
 const mapStateToProps = state => {
-    console.log(state);
+    //console.log(state);
   return { activeFilter: state.visibilityFilter };
   // dump the components to state for activeFilter
 };

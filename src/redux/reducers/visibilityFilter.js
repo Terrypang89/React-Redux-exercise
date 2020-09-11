@@ -1,5 +1,6 @@
 import { SET_FILTER } from "../actionTypes";
 import { VISIBILITY_FILTERS } from "../../constants";
+//VISIBILITY_FILTERS = { ALL: "all", COMPLETED: "completed", INCOMPLETE: "incomplete" }
 
 const initialState = VISIBILITY_FILTERS.ALL;
 

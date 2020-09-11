@@ -9,7 +9,7 @@ import { toggleTodo } from "../redux/actions";
 // todo is the props return by mapStateToProps when call at TodoList
 const Todo = ({ todo, toggleTodo }) => ( 
     // when onClick toggleTodo(todo.id) is triggered, send action with todo.id to store
-   <div> {console.log(todo)}
+   <div> 
       <li className="todo-item" onClick={() => toggleTodo(todo.id)}>
     {todo && todo.completed ? "👌" : ":"}{" "}
     <span

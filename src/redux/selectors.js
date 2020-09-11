@@ -3,13 +3,18 @@ import { VISIBILITY_FILTERS } from "../constants";
 export const getTodosState = store => store.todos;
 
 //returns the allIds list from the todos store
-export const getTodoList = store =>
-  getTodosState(store) ? getTodosState(store).allIds : [];
+export const getTodoList = store => {
+    //console.log(getTodosState(store).allIds);
+  return getTodosState(store) ? getTodosState(store).allIds : [];
+}
 
 //finds the todo in the store given by id
-export const getTodoById = (store, id) =>
-  getTodosState(store) ? { ...getTodosState(store).byIds[id], id } : {};
-
+export const getTodoById = (store, id) =>{
+    console.log( getTodosState(store) );
+    console.log( { ...getTodosState(store).byIds[id] });
+    console.log(id);
+    return getTodosState(store) ? { ...getTodosState(store).byIds[id], id } : {};
+}
 /**
  * example of a slightly more complex selector
  * select from store combining information from multiple reducers
