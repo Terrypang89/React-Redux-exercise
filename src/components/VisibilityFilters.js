@@ -44,5 +44,5 @@ const mapStateToProps = state => {
 // export default VisibilityFilters;
 export default connect(
   mapStateToProps,  // map state to store 
-  { setFilter } //dispatch to action
+  { setFilter } //dispatch to action 
 )(VisibilityFilters);

@@ -8,10 +8,10 @@ const initialState = VISIBILITY_FILTERS.ALL;
 const visibilityFilter = (state = initialState, action) => {
   switch (action.type) {
     case SET_FILTER: {
-      return action.payload.filter;
+      return action.payload.filter; //set filter
     }
     default: {
-      return state;
+      return state; //set back the value
     }
   }
 };
